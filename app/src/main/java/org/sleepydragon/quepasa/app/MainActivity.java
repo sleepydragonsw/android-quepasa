@@ -1,4 +1,4 @@
-package quepasa.sleepydragon.org.quepasa;
+package org.sleepydragon.quepasa.app;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
