@@ -1,3 +1,5 @@
+apply plugin: 'kotlin-android'
+
 android {
 
     compileSdkVersion 25
@@ -17,4 +19,8 @@ android {
         javaMaxHeapSize "3g"
     }
 
+}
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
 }
