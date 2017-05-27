@@ -4,7 +4,10 @@
     package="org.sleepydragon.quepasa.app"
     >
 
-    <application android:allowBackup="true">
+    <application
+        android:allowBackup="true"
+        android:name=".QpApplication"
+        >
 
         <activity
             android:name=".MainActivity"

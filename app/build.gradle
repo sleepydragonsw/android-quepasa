@@ -16,10 +16,13 @@ android {
 
     buildTypes {
         debug {
+            signingConfig signingConfigs.debug
             minifyEnabled false
             shrinkResources false
+            multiDexEnabled true
         }
         release {
+            signingConfig signingConfigs.debug
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile("proguard-android-optimize.txt")
@@ -35,9 +38,9 @@ android {
             versionCode 2
             minSdkVersion 21
         }
-        api25 {
+        api24 {
             versionCode 3
-            minSdkVersion 25
+            minSdkVersion 24
         }
     }
 
@@ -47,6 +50,8 @@ android {
 }
 
 dependencies {
+    debugCompile 'com.android.support:multidex:1.0.1'
+
     releaseCompile project(path: ":lib:ui", configuration: "release")
     debugCompile project(path: ":lib:ui", configuration: "debug")
 }
