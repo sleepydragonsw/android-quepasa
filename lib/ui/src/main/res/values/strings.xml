@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">Que Pasa</string>
+    <string name="qp_app_name">Que Pasa</string>
     <string name="action_settings">Settings</string>
 </resources>
